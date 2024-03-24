@@ -11353,8 +11353,7 @@ section#contact form#contactForm :-ms-input-placeholder {
     display: flex;
     flex-direction: row;
 }
-/* Estilo del fondo gris para el menú abierto */
-/* Navbar styles */
+/* Estilo del fondo gris para el menú abierto */ /* Navbar styles */
 .navbar {
   transition: background-color 0.3s ease;
 }
