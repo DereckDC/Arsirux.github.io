@@ -3949,6 +3949,7 @@ textarea.form-control-lg {
   }
   .navbar-expand-lg .navbar-nav {
     flex-direction: row;
+    align-items: center;
   }
   .navbar-expand-lg .navbar-nav .dropdown-menu {
     position: absolute;
@@ -10877,6 +10878,7 @@ p {
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   text-transform: uppercase;
   font-weight: 700;
+  background: #212529;
 }
 #mainNav .navbar-brand {
   color: #ffc800;
@@ -11309,3 +11311,61 @@ section#contact form#contactForm :-ms-input-placeholder {
   font-size: 0.9rem;
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
+/**********************************************************************************************/
+.checkes{
+  position: relative !important;
+  height: 25px;
+  width: 50px;
+  border-radius: 20px;
+}
+.checkes::before{
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 25px;
+  background: #323539;
+  border-radius: 25px;
+}
+.checkes::after{
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  background: #fff;
+  border-radius: 25px;
+  transition: 0.25s;
+  border: 2px solid #323539;
+  box-sizing: border-box;
+}
+.checkes:checked::after{
+  left: 25px;
+  border: 2px solid #59bcf2;
+}
+.checkes:checked::before{
+  background: #59bcf2;
+}
+.logos{
+  height: 25px;
+}
+.idioma{
+  align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+}
+/* Estilo del fondo gris para el menú abierto */
+/* Navbar styles */
+.navbar {
+  transition: background-color 0.3s ease;
+}
+
+/* Shrink navbar */
+.navbar-shrink {
+  background-color: #212529 !important; /* Color de fondo cuando se encoge */
+}
+
+/* Fondo del menú abierto */
+.container.menu-open-bg {
+  background-color: #212529 /* Color de fondo del menú abierto */
+}
+
